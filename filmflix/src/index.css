@@ -1,0 +1,261 @@
+/* General Settings */
+
+main {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 50px;
+  border: 0px;
+}
+
+body {
+  background-color: #41B3A3;
+}
+
+/* navigational bar settings */
+
+.topnav { 
+  background-color:  #41B3A3;
+  opacity: 0.9;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 5vh;
+
+}
+
+.topnav a {
+  float: left;
+  font-size: 17px;
+  padding: 6px;
+  padding-top: 15px;
+  margin-left: 8px;
+  margin-left: 16px;
+  text-decoration: none;
+  color: #000000;
+  top: 20px;
+}
+
+.topnav .film {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.topnav input {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+
+}
+
+.topnav button {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+  cursor: pointer;
+
+}
+
+.topnav button:hover {
+  background: #eca1a6;
+  color: #000000;
+
+}
+
+.topnav a:hover {
+  background: #eca1a6;
+  color: #000000;
+}
+
+
+/* Top section */
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #41B3A3;
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* What is AI section */
+
+.hotPicks {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #41B3A3;
+  display: flex;
+  flex-direction: column;
+  min-height: 65vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+}
+
+/* ChatBot section */
+
+.chatbot {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #eca1a6;
+}
+
+#api {
+  height: 75px;
+}
+
+#submit {
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+
+#submit:hover {
+  background-color: #41B3A3;
+}
+
+#question {
+  width: 80%;
+  border: 3px solid #000000;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* Footer section */
+
+footer {
+  background-color: #41B3A3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 5vh;
+  margin-top: 600px;
+}
+
+/* queries for varying page sizes */
+
+@media (max-width: 1000px) {
+  .impact, .subfields { /* text divs */
+      width: 100%;
+  }
+  .imageContainer, .imageContainer2 { /* image divs */
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .ship { /* logo on nav bar */
+      visibility: hidden;
+  }
+
+  .topnav a { /* nav bar links */
+      float: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .topnav input, .topnav button { /* search bar and button */
+      visibility: hidden;
+  }
+  iframe { /* video and Gif */
+      width: 400px;
+  }
+}
+
+#results {
+  height: 100vh;
+  background-color: #41B3A3;
+}
+
+.filmCard {
+  background-color: beige;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  margin: 10px;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+  border: none;
+}
+
+textarea {
+  margin: 10px;
+  font-size: 17px;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  border: none;
+}
+
+
+
+#actorSubmit, #filmSubmit, #addActorSubmit, #addFilmSubmit, #deleteActorSubmit, #deleteFilmSubmit, #editActorSubmit, #editFilmSubmit{
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+button:hover {
+  background-color: #41B3A3;
+}
+
+.option {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+.addActor, .addFilm {
+  font-size: 60px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+#actors {
+  margin-top: 100px;
+}
+
+#films {
+  margin-top: 100px;
+}
+
+#filmIcon {
+  cursor: pointer;
+}
